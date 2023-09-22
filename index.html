@@ -5,38 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        input:focus{
-            font: weight 700px;
-            color: chartreuse;
-            font-size: 20px;
+      h1::before{
+        content: "Hellow ";
+        color: rgb(151, 26, 4);
+        font-size: 32px;
+        background-color: cornflowerblue;
+      }
+      .special-effect::after{
+        content: " well done";
+        color: brown;
+        font-size: 22px;
+        background-color: cadetblue;
+
+      }
+              body {
+          counter-reset: section; /* Set a counter named 'section', and its initial value is 0. */
         }
 
-        li:first-child{
-            background-color: chocolate;
-        }
+       p::before{
+        content: "❤️";
+       }
+
     </style>
 </head>
 <body>
+    <h1>Pseudo class</h1>
+    <h1 class="special-effect">Normal class</h1>
+    <h1 class="special-effect">skill class class</h1>
+    <h1 class="special-effect">Vodro Class</h1>
     <h1>My third website</h1>
-    <p>Then I have to push my all next changes to github</p>
-    <p>Feeling better for transporting the changes into github</p>
-    <p>Now I am continuing</p>
+    
     <input type="text">
     <br>
     <button>click on this</button>
-    <p>I am enjoying a lot to code now </p>
-    <p>switched to the branch my-awesome-button and now the branch is not available , what is the matter for this change, lets see</p>
-    <input name="email" type="text">
+   <input name="email" type="text">
     <br>
     <input name="password" type="text">
     <ul>
-        <li>Alia </li>
-        <li>Saniya</li>
-        <li>Maliha</li>
-        <li>kariba</li>
-        <li>Rajiba</li>
-        <li>Jalia</li>
-        <li>Ffalia</li>
+        <p>Alia </p>
+        <p>Saniya</p>
+        <p>Maliha</p>
+        <p>kariba</p>
+        <p>Rajiba</p>
+        <p>Jalia</p>
+        <p>Ffalia</p>
     </ul>
 </body>
 </html>
